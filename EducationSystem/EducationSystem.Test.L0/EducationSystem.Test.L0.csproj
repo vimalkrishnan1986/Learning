@@ -1,0 +1,29 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+
+    <IsPackable>false</IsPackable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\vimal\.nuget\packages\specrun.runner\3.0.21-beta\build\..\tools\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="FluentAssertions" Version="5.5.1" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="15.3.0-preview-20170628-02" />
+    <PackageReference Include="Moq" Version="4.10.0" />
+    <PackageReference Include="MSTest.TestAdapter" Version="1.1.18" />
+    <PackageReference Include="MSTest.TestFramework" Version="1.1.18" />
+    <PackageReference Include="NUnit" Version="3.11.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Education.BusinessServices\Education.BusinessServices.csproj" />
+    <ProjectReference Include="..\Education.Services.Api\Education.Services.Api.csproj" />
+    <ProjectReference Include="..\Education.Utitlites\Education.Utitlites.csproj" />
+    <ProjectReference Include="..\EducationSystem.DataServices\Education.DataServices.csproj" />
+  </ItemGroup>
+
+</Project>
